@@ -35,11 +35,11 @@ versions.
 ## Usage
 
 Clone this repository and run `make` at the repository root to create an example
-document of each supported type.
+document of each supported flavor.
 
 For an specific type, run `make <type>`.
 
-The following types are currently available: `article`, `letter` and `thesis`.
+The following flavors are currently available: `article`, `letter` and `thesis`.
 
 To create your own document erase the existing markdown files and put
 your own at the top level or in whatever subdirectory arrangement you want.
@@ -50,3 +50,10 @@ Also, change the included [references.bib](./references.bib) with your own
 references in bibtex or biblatex format. If you don't need citations
 you can leave this as is (they are not rendered if no citation is called),
 but if you delete the file make sure to clear it references in the Makefile.
+
+## Configuration
+
+Some configuration options you would probably want to tweak can be found at
+[`templates/common-options.yaml`](./templates/common-options.yaml) and
+[`templates/common-defaults.yaml`](./templates/common-defaults.yaml),
+which apply to all document flavors.
