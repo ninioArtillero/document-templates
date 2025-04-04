@@ -1,0 +1,20 @@
+verbosity: WARNING
+
+standalone: true
+
+reference-links: true
+
+from: markdown+rebase_relative_paths
+
+pdf-engine: pdflatex
+
+# Syntax highlight for code blocks.
+# Default options = pygments | tango | espresso | zenburn | kate | monochrome | breezedark | haddock
+# You can also use a custom theme.
+# For this, start by modifing an existing theme:
+# pandoc --print-highlight-style haddock > haddock.theme
+highlight-style: ${.}/haddock-with-background.theme
+
+filters:
+# To render Lilypond codeblocks
+- ${.}/lua-filters/lilypond.lua

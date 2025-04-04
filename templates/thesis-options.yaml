@@ -1,0 +1,14 @@
+documentclass: book
+
+classoption:
+- onecolumn
+- twoside
+
+# Table of contents
+toc: true
+toc-depth: 3
+secnumdepth: 4
+
+# Figures and tables
+lof: true
+lot: true

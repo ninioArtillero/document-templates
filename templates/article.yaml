@@ -1,0 +1,12 @@
+---
+citeproc: true
+
+top-level-division: section
+
+number-sections: true
+
+reference-links: true
+
+metadata-files:
+- ${.}/common-options.yaml
+- ${.}/article-options.yaml

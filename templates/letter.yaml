@@ -1,0 +1,7 @@
+top-level-division: section
+
+number-sections: false
+
+metadata-files:
+- ${.}/common-options.yaml
+- ${.}/letter-options.yaml

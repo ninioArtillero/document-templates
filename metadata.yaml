@@ -1,0 +1,16 @@
+title: My Awesome Document
+
+subtitle: A Cool Subtitle
+
+thanks: "People make all this possible"
+
+author: John Doe
+
+keywords:
+  - document
+  - template
+  - pandoc
+  - markdown
+  - latex
+
+date: Today

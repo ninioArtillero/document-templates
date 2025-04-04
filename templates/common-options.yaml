@@ -1,0 +1,91 @@
+lang: en-US
+
+classoption:
+- 10pt
+
+# Paper size is set automatically by locale from the lang value.
+# But it can be overwritten here.
+# letterpaper | a4 |
+#papersize: a4
+
+## Specify margins manually
+#geometry:
+#- width=129mm
+#- top=25mm
+#- bottom=25mm
+#- headheight=15pt
+
+# Automatically render url's as footnotes
+#links-as-notes: true
+
+hyperrefoptions:
+- breaklinks=true
+
+link-citations: true
+link-bibliography: true
+linkcolor: black
+filecolor: violet
+urlcolor: blue
+citecolor: red
+toccolor: black
+urlstyle: sf
+
+# Default intentation rules are a function of lang and documentclass.
+# If set to true, new paragraphs are indented. Otherwise, a wider space is used.
+#indent: false
+
+# Set space between lines using setspace package
+#linestretch: 1.25
+
+# Fonts
+mainfont: Libertinus Serif
+sansfont: Libertinus Sans
+monofont: Hasklig
+mathfont: Libertinus Math
+
+reference-section-title: References
+
+# For footnote citation styles.
+notes-after-punctuation: true
+
+# Detailed text spacing by the microtype packages.
+# https://www.khirevich.com/latex/microtype/
+# Some options are not available for xelatex
+microtypeoptions:
+- babel=true
+- factor=1100
+- protrusion=true
+- stretch=10
+- shrink=10
+#- activate={true,nocompatibility}
+#- kerning=true
+#- tracking=true
+#- spacing=true
+
+header-includes:
+# Detailed microtype settings
+# https://www.khirevich.com/latex/microtype/
+#- \SetProtrusion{encoding={*},family={bch},series={*},size={6,7}}
+#                {1={ ,750},2={ ,500},3={ ,500},4={ ,500},5={ ,500},
+#                 6={ ,500},7={ ,600},8={ ,500},9={ ,500},0={ ,500}}
+#- \SetExtraKerning[unit=space]
+#      {encoding={*}, family={bch}, series={*}, size={footnotesize,small,normalsize}}
+#      {\textendash={400,400}, % en-dash, add more space around it
+#       "28={ ,150}, % left bracket, add space from right
+#       "29={150, }, % right bracket, add space from left
+#       \textquotedblleft={ ,150}, % left quotation mark, space from right
+#       \textquotedblright={150, }} % right quotation mark, space from left
+# Wrap long lines in codeblocks with syntax highlight.
+# https://stackoverflow.com/questions/20788464/pandoc-doesnt-text-wrap-code-blocks-when-converting-to-pdf
+- \usepackage{fvextra}
+- \DefineVerbatimEnvironment{Highlighting}{Verbatim}{breaklines,commandchars=\\\{\}}
+# Latex macros for numbered theorem environments.
+- \usepackage{amsthm}
+  \theoremstyle{definition}
+  \newtheorem{definition}{Definición}[section]
+  \theoremstyle{remark}
+  \newtheorem*{remark}{Observación}
+
+# Lilypond score images configuration.
+ly-resolution: 300
+lilypond.image_directory: ${.}/extracted-images/

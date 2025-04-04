@@ -1,0 +1,9 @@
+citeproc: true
+
+number-sections: true
+
+top-level-division: chapter
+
+metadata-files:
+- ${.}/common-options.yaml
+- ${.}/thesis-options.yaml
