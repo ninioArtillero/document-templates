@@ -1,7 +1,7 @@
 # Document Templates
 
-This repository contains templates for generating different _document types_, in
-PDF format, from markdown files using [Pandoc](https://pandoc.org/).
+This repository contains templates for generating different _simple document flavors_,
+in PDF format, from markdown files using [Pandoc](https://pandoc.org/).
 
 Features:
 
