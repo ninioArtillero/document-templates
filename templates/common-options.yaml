@@ -40,8 +40,8 @@ urlstyle: sf
 # Fonts
 mainfont: Libertinus Serif
 sansfont: Libertinus Sans
-monofont: Hasklig
-mathfont: Libertinus Math
+monofont: Inconsolata
+mathfont: Libertinus Serif
 
 reference-section-title: References
 
